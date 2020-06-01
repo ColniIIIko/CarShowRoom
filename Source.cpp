@@ -14,6 +14,7 @@ void CodeWords()
 	cout << "Clear - clear console"<< endl;
 	cout << "DataToFile - copy all data to file"<< endl;
 	cout << "DataFromFile - take all data from file"<< endl;
+	cout << "EXIT"<< endl;
 }
 
 
@@ -53,6 +54,8 @@ int To_easyInt(string a)
 	return 7;
 	if(a=="DataFromFile")
 	return 8;
+	if(a=="EXIT")
+	return 9;
 	return 0;
 }
 

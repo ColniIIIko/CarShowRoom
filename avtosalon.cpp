@@ -80,7 +80,8 @@ public:
         int a= DataInput();
         if(a==0)
 		{
-		for(int i=0;i<10;i++)
+		int r= rand() % 20 + 1;
+		for(int i=0;i<r;i++)
 		cars.push_back(Car());
 		}
 		else
@@ -249,6 +250,9 @@ int main()
 				break;
 			case 8:
 				c.SetDataFromFile();
+				break;
+			case 9:
+				exit(1);
 				break;
 			default:
 				cout << "Incorrect Input" << endl;
