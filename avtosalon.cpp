@@ -155,7 +155,7 @@ public:
 
 	void GetDataToFile() override
 	{
-		ofstream file("999.txt");
+		ofstream file("SetDataTo.txt");
 		if (file.is_open())
 		{   
 		    file<<  "Name:" << setw(18) << "release date:" << setw(18) << "engine Volume:" << setw(18) << "price:" << endl;
@@ -166,7 +166,7 @@ public:
 	void SetDataFromFile() override
 	{
 		string temp;
-		ifstream file("777.txt");
+		ifstream file("GetDataFrom.txt");
 		string name;
 		string releaseDate;
 		int engineVolume;
