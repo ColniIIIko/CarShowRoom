@@ -1,0 +1,9 @@
+#pragma once
+#include <iostream>
+std::string GenName();
+std::string GenReleaseDate();
+int GenEngineVolume();
+int GenPrice();
+void CodeWords();
+int To_easyInt(std::string);
+int DataInput();
